@@ -30,6 +30,7 @@
   },
   "main": "ng2-charts.js",
   "typings": "ng2-charts.d.ts",
+  "private": true,
   "keywords": [
     "angular2",
     "angularjs",
