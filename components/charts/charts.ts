@@ -2,15 +2,14 @@ import {
   Component, OnDestroy, OnInit, OnChanges, EventEmitter, ElementRef, Input,
   Output
 } from '@angular/core';
-import {CORE_DIRECTIVES, NgClass} from '@angular/common';
-import {FORM_DIRECTIVES} from '@angular/forms';
+import {NgClass} from '@angular/common';
 
 declare var Chart:any;
 
 @Component({
   selector: 'base-chart',
   template: `<canvas style="width: 100%; height: 100%;"></canvas>`,
-  directives: [CORE_DIRECTIVES, FORM_DIRECTIVES, NgClass],
+  directives: [NgClass],
   styles: [`:host { display: block; }`]
 })
 export class BaseChartComponent implements OnDestroy, OnChanges, OnInit {
